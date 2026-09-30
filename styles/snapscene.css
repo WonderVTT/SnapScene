@@ -1,0 +1,23 @@
+.snapscene-dialog .snapscene-save p { margin-top: 0; }
+.snapscene-dialog .snapscene-list {
+  list-style: none;
+  margin: 0 0 0.5rem;
+  padding: 0;
+  max-height: 420px;
+  overflow-y: auto;
+}
+.snapscene-dialog .snapscene-row label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.4rem;
+  border-bottom: 1px solid var(--color-border-light-2, #0003);
+  cursor: pointer;
+}
+.snapscene-dialog .snapscene-row label:hover { background: rgba(0, 0, 0, 0.05); }
+.snapscene-dialog .snapscene-row input { flex: 0 0 auto; margin-top: 2px; }
+.snapscene-dialog .snapscene-info { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.snapscene-dialog .snapscene-date,
+.snapscene-dialog .snapscene-music { font-size: var(--font-size-12, 12px); color: var(--color-text-dark-secondary, #4b4a44); }
+.snapscene-dialog .snapscene-counts { display: flex; flex-wrap: wrap; gap: 0.75rem; font-size: var(--font-size-12, 12px); }
+.snapscene-dialog .snapscene-empty { font-style: italic; text-align: center; }

@@ -1,0 +1,28 @@
+{
+  "SNAPSCENE": {
+    "ControlTitle": "Scene Snapshots",
+    "Save": "Save Snapshot",
+    "Load": "Load Snapshot",
+    "SaveTitle": "Save Scene Snapshot",
+    "SaveHint": "Save a snapshot of the current state of <strong>{scene}</strong>: tokens (except Player Characters), lights, tiles, regions, ambient sounds, walls and doors, drawings, notes, scene lighting and the playing soundtrack.",
+    "SnapshotName": "Snapshot Name",
+    "SaveConfirm": "Save",
+    "DefaultName": "Snapshot {date}",
+    "Saved": "Snapshot \"{name}\" saved.",
+    "LoadTitle": "Load Snapshot: {scene}",
+    "LoadConfirm": "Load",
+    "NoSnapshots": "No snapshots have been saved for this scene yet.",
+    "Delete": "Delete",
+    "Cancel": "Cancel",
+    "RestoreTitle": "Restore Snapshot",
+    "RestoreConfirm": "Restore <strong>{name}</strong> ({date})? The current state of the scene will be overwritten: objects added since the snapshot will be deleted and removed objects will be recreated.",
+    "Restoring": "Restoring snapshot \"{name}\"...",
+    "Restored": "Snapshot restored: {created} created, {updated} updated, {deleted} deleted.",
+    "RestoredWithErrors": "{count} problem(s) occurred, see the console (F12) for details.",
+    "DeleteTitle": "Delete Snapshot",
+    "DeleteConfirm": "Permanently delete snapshot <strong>{name}</strong>?",
+    "Deleted": "Snapshot \"{name}\" deleted.",
+    "MissingPlaylist": "Playlist \"{name}\" no longer exists.",
+    "MissingSound": "Sound \"{name}\" no longer exists in playlist \"{playlist}\"."
+  }
+}

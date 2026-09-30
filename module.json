@@ -1,0 +1,19 @@
+{
+  "id": "snapscene",
+  "title": "SnapScene",
+  "description": "Save and restore GM snapshots of a scene: lights, tiles, regions, tokens, ambient sounds, walls and doors, drawings, notes, scene lighting and the playing soundtrack.",
+  "version": "1.0.0",
+  "authors": [
+    { "name": "Emanuele Manfredini" }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12.331",
+    "maximum": "12"
+  },
+  "esmodules": ["scripts/snapscene.js"],
+  "styles": ["styles/snapscene.css"],
+  "languages": [
+    { "lang": "en", "name": "English", "path": "lang/en.json" }
+  ]
+}
