@@ -1,0 +1,37 @@
+# Push a tag like v1.0.1 to publish a release that Foundry (and Forge) can install:
+# module.json points at this release's module.zip, and the manifest URL
+# .../releases/latest/download/module.json always serves the newest one.
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stamp module.json
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          BASE="https://github.com/${GITHUB_REPOSITORY}"
+          jq --arg v "$VERSION" --arg base "$BASE" --arg tag "$GITHUB_REF_NAME" '
+            .version = $v
+            | .url = $base
+            | .manifest = ($base + "/releases/latest/download/module.json")
+            | .download = ($base + "/releases/download/" + $tag + "/module.zip")
+          ' module.json > module.tmp && mv module.tmp module.json
+
+      - name: Build module.zip
+        run: zip -r module.zip . -x ".git/*" ".github/*" "*.sh" ".gitignore"
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            module.json
+            module.zip

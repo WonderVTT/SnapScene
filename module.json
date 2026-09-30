@@ -4,16 +4,29 @@
   "description": "Save and restore GM snapshots of a scene: lights, tiles, regions, tokens, ambient sounds, walls and doors, drawings, notes, scene lighting and the playing soundtrack.",
   "version": "1.0.0",
   "authors": [
-    { "name": "Emanuele Manfredini" }
+    {
+      "name": "Emanuele Manfredini"
+    }
   ],
   "compatibility": {
     "minimum": "12",
     "verified": "12.331",
     "maximum": "12"
   },
-  "esmodules": ["scripts/snapscene.js"],
-  "styles": ["styles/snapscene.css"],
+  "esmodules": [
+    "scripts/snapscene.js"
+  ],
+  "styles": [
+    "styles/snapscene.css"
+  ],
   "languages": [
-    { "lang": "en", "name": "English", "path": "lang/en.json" }
-  ]
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "url": "https://github.com/WonderVTT/SnapScene",
+  "manifest": "https://github.com/WonderVTT/SnapScene/releases/latest/download/module.json",
+  "download": "https://github.com/WonderVTT/SnapScene/releases/download/v1.0.0/module.zip"
 }
